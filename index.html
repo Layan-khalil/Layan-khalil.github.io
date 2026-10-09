@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Layan Khalil Ibrahim, AI Product Engineer</title>
+<meta name="description" content="Layan Khalil Ibrahim is an AI Product Engineer who designs and builds software products and intelligent systems end to end.">
+<meta name="theme-color" content="#0A0A07">
+<link rel="preload" as="image" href="assets/images/layan.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --void:#0A0A07;--void2:#12130C;--void3:#1A1B11;
+  --glass:rgba(24,24,15,.55);--glass2:rgba(34,34,21,.72);
+  --line:rgba(233,211,174,.12);--line2:rgba(233,211,174,.24);--line3:rgba(233,211,174,.42);
+  --teal:#2ED8DC;--teal2:#14A9AE;--teal-soft:rgba(46,216,220,.14);
+  --orange:#E2764E;--orange2:#F0A27E;--orange-soft:rgba(226,118,78,.16);
+  --ice:#F4EADA;--ice2:#D9CBB3;--mute:#A79D88;
+  --stone:#E9D3AE;--sand:#CDB48A;--olive:#6E6A33;--olive-deep:#2C2A12;--olive-lt:#9A954F;--terra:#B8634A;--blush:#EBC9C4;--blush-soft:rgba(235,201,196,.16);
+  --serif:"Newsreader",Georgia,serif;
+  --display:"Unbounded","Geist",system-ui,sans-serif;
+  --sans:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Geist Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
+  color-scheme:dark;box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--void:#0A0A07}}
+:root[data-theme="light"]{--void:#0A0A07}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 84px);-webkit-text-size-adjust:100%;background:var(--void)}
+body{margin:0;background:var(--void);color:var(--ice);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;background:
+ radial-gradient(ellipse 70% 50% at 85% 0%,rgba(110,106,51,.22),transparent 70%),
+ radial-gradient(ellipse 50% 40% at 0% 100%,rgba(184,99,74,.12),transparent 70%),
+ linear-gradient(var(--line) 1px,transparent 1px) 0 0/80px 80px,
+ linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/80px 80px;opacity:.28;mask-image:radial-gradient(ellipse at 50% 30%,#000 10%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 50% 30%,#000 10%,transparent 75%)}
+body::after{content:"";position:fixed;inset:-50%;pointer-events:none;z-index:60;opacity:.07;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+main,footer{position:relative;z-index:1}
+a{color:inherit}
+a:hover{color:var(--teal)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--teal);color:var(--void);padding:10px 16px;border-radius:999px;text-decoration:none}
+.skip:focus{top:calc(env(safe-area-inset-top,0px) + 12px)}
+.wrap{max-width:1400px;margin:0 auto;padding:0 clamp(20px,4.5vw,64px);position:relative}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.tag-hud{display:inline-flex;align-items:center;gap:10px}
+.tag-hud::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--teal);box-shadow:0 0 12px var(--teal)}
+.tag-hud.warm::before{background:var(--blush);box-shadow:0 0 12px var(--blush)}
+.h2{margin:0;font-family:var(--display);font-weight:300;font-size:clamp(30px,4vw,58px);line-height:1.08;letter-spacing:-.02em}
+.grad{background:linear-gradient(100deg,var(--stone) 5%,var(--blush) 45%,var(--orange) 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(18px,1.5vw,21px);line-height:1.6;color:var(--ice2)}
+.sec{padding:clamp(96px,11vw,160px) 0;position:relative}
+.sec-head{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:24px;align-items:end;margin-bottom:clamp(44px,6vw,80px)}
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;background:var(--teal);color:#021014;text-decoration:none;font-size:15px;font-weight:600;border:0;box-shadow:0 0 0 1px rgba(46,216,220,.5),0 10px 40px -10px rgba(46,216,220,.6);will-change:transform;transition:box-shadow .4s var(--ease),background .3s}
+.btn:hover{color:#021014;background:#5BE6E9;box-shadow:0 0 0 1px rgba(46,216,220,.8),0 14px 60px -8px rgba(46,216,220,.85)}
+.btn.hot{background:var(--orange);box-shadow:0 0 0 1px rgba(226,118,78,.5),0 10px 40px -10px rgba(226,118,78,.7)}
+.btn.hot:hover{background:var(--orange2);box-shadow:0 0 0 1px rgba(226,118,78,.8),0 14px 60px -8px rgba(226,118,78,.9)}
+.btn .arr{transition:transform .35s var(--ease)}
+.btn:hover .arr{transform:translateX(4px)}
+.ghost{display:inline-flex;align-items:center;min-height:54px;padding:0 24px;border-radius:999px;border:1px solid var(--line2);text-decoration:none;font-size:15px;background:rgba(10,10,7,.35);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border-color .3s,background .3s}
+.ghost:hover{border-color:var(--teal);color:var(--ice);background:rgba(46,216,220,.08)}
+.panel{position:relative;background:var(--glass);border:1px solid var(--line);border-radius:18px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.panel.brk::before,.panel.brk::after{content:"";position:absolute;width:14px;height:14px;border:1px solid var(--teal);opacity:.7}
+.panel.brk::before{left:-1px;top:-1px;border-right:0;border-bottom:0;border-top-left-radius:18px}
+.panel.brk::after{right:-1px;bottom:-1px;border-left:0;border-top:0;border-bottom-right-radius:18px}
+.ser{font-family:var(--serif);font-style:italic;font-weight:300;letter-spacing:-.01em}
+.grad.ser{padding-right:.08em}
+::selection{background:var(--blush);color:#1C0B04}
+.mask{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.mask>span{display:inline-block}
+
+/* header */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:transform .45s var(--ease),background .3s,border-color .3s;border-bottom:1px solid transparent}
+.hdr.scrolled{background:rgba(10,10,7,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.hdr.hide{transform:translateY(-100%)}
+.hdr-in{display:flex;justify-content:space-between;align-items:center;height:76px}
+.brand{text-decoration:none;display:flex;align-items:center;gap:12px}
+.brand-mark{width:30px;height:30px;border-radius:50%;background:radial-gradient(circle at 35% 35%,var(--teal),transparent 60%),radial-gradient(circle at 70% 70%,var(--blush),transparent 60%),var(--olive);box-shadow:0 0 18px rgba(233,211,174,.35);animation:spin 12s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.brand b{display:block;font-family:var(--display);font-weight:400;font-size:14px;letter-spacing:.01em}
+.brand span{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.nav{display:flex;gap:30px;align-items:center}
+.nav a{text-decoration:none;font-size:14px;position:relative;color:var(--ice2)}
+.nav a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--teal);box-shadow:0 0 8px var(--teal);transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
+.nav a:not(.btn):hover{color:var(--ice)}
+.nav a:not(.btn):hover::after{transform:scaleX(1);transform-origin:left}
+.nav .btn{min-height:42px;padding:0 20px;font-size:14px}
+.menu-btn{display:none;width:46px;height:46px;border-radius:999px;border:1px solid var(--line2);background:rgba(10,10,7,.5);align-items:center;justify-content:center;cursor:pointer}
+.menu-btn i{display:block;width:16px;height:1.5px;background:var(--ice);position:relative;transition:background .2s}
+.menu-btn i::before,.menu-btn i::after{content:"";position:absolute;left:0;width:16px;height:1.5px;background:var(--ice);transition:transform .35s var(--ease)}
+.menu-btn i::before{top:-5px}.menu-btn i::after{top:5px}
+.menu-open .menu-btn i{background:transparent}
+.menu-open .menu-btn i::before{transform:translateY(5px) rotate(45deg)}
+.menu-open .menu-btn i::after{transform:translateY(-5px) rotate(-45deg)}
+.sheet{position:fixed;inset:0;z-index:45;background:rgba(10,10,7,.96);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:calc(env(safe-area-inset-top,0px) + 100px) 24px calc(env(safe-area-inset-bottom,0px) + 32px);display:flex;flex-direction:column;visibility:hidden;opacity:0;transition:opacity .35s var(--ease),visibility .35s}
+.menu-open .sheet{visibility:visible;opacity:1}
+.sheet a{text-decoration:none;font-family:var(--display);font-weight:300;font-size:34px;line-height:1.15;padding:14px 0;border-bottom:1px solid var(--line)}
+.sheet .btn{margin-top:auto;font-family:var(--sans);font-size:16px;border-bottom:0}
+
+/* hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;padding:calc(env(safe-area-inset-top,0px) + 130px) 0 56px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;isolation:isolate}
+.hero-shade{position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse 30% 46% at 80% 40%,rgba(235,201,196,.07),transparent 70%),linear-gradient(180deg,rgba(10,10,7,.55) 0%,transparent 22%,transparent 62%,var(--void) 100%)}
+.me-stage{position:absolute;right:clamp(16px,7vw,150px);bottom:0;height:min(90vh,880px);aspect-ratio:398/749;z-index:-1;perspective:1000px;perspective-origin:50% 35%;pointer-events:none}
+.me-sway,.me-card{position:absolute;inset:0;transform-style:preserve-3d;will-change:transform}
+.me-layer{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:50% 100%;-webkit-mask-image:linear-gradient(180deg,#000 70%,transparent 98%);mask-image:linear-gradient(180deg,#000 70%,transparent 98%);user-select:none;-webkit-user-drag:none}
+.me-ghost-t{transform:translateZ(-90px) translateX(-3%) scale(1.06);filter:brightness(0) blur(22px);opacity:.75}
+.me-ghost-t2{transform:translateZ(-55px) scale(1.03);filter:blur(18px) brightness(.9) sepia(1) saturate(1.6);opacity:.4}
+.me-ghost-o{transform:translateZ(-40px) translateX(2%) scale(1.02);filter:blur(14px) brightness(.7) sepia(1) hue-rotate(-25deg) saturate(3);opacity:.35}
+.me-img{transform:translateZ(40px);filter:saturate(1) contrast(1.04) brightness(.96) drop-shadow(-1px 0 0 rgba(233,211,174,.55)) drop-shadow(1px 0 0 rgba(235,201,196,.45)) drop-shadow(0 20px 30px rgba(10,10,7,.55))}
+.me-sheen{position:absolute;inset:0;transform:translateZ(41px);pointer-events:none;background:linear-gradient(105deg,rgba(233,211,174,0) calc(var(--sx,50%) - 30%),rgba(244,234,218,.22) var(--sx,50%),rgba(235,201,196,0) calc(var(--sx,50%) + 25%));mix-blend-mode:screen;-webkit-mask:url("assets/images/layan.webp") 50% 100%/contain no-repeat;mask:url("assets/images/layan.webp") 50% 100%/contain no-repeat;opacity:.9}
+.me-arch{position:absolute;left:-14%;right:-14%;top:4%;bottom:0;transform:translateZ(-150px) scale(1.12);border-radius:999px 999px 18px 18px/52% 52% 18px 18px;background:
+ linear-gradient(rgba(233,211,174,.13) 1px,transparent 1px) 0 0/100% 11%,
+ linear-gradient(90deg,rgba(233,211,174,.13) 1px,transparent 1px) 0 0/20% 100%,
+ radial-gradient(ellipse 70% 55% at 50% 36%,rgba(233,211,174,.22),transparent 70%),
+ linear-gradient(180deg,#5D5A29 0%,#3A3818 55%,#1E1D0E 100%);
+ box-shadow:inset 0 0 0 1px rgba(233,211,174,.32),inset 0 0 80px rgba(10,10,7,.65),0 0 120px -20px rgba(110,106,51,.7);
+ -webkit-mask-image:linear-gradient(180deg,#000 62%,transparent 98%);mask-image:linear-gradient(180deg,#000 62%,transparent 98%)}
+.me-arch::after{content:"";position:absolute;inset:5% 7% 0;border-radius:inherit;border:1px solid rgba(233,211,174,.18)}
+.me-sun{position:absolute;left:-30%;right:-30%;top:-6%;height:70%;transform:translateZ(-200px);background:radial-gradient(ellipse at 50% 40%,rgba(233,211,174,.18),rgba(235,201,196,.08) 40%,transparent 70%);filter:blur(10px)}
+.me-floor{position:absolute;left:-20%;right:-20%;bottom:-2%;height:16%;transform:translateZ(-20px) rotateX(80deg);background:radial-gradient(ellipse at center,rgba(235,201,196,.18),transparent 65%);filter:blur(6px)}
+.me-tag{position:absolute;left:-6%;top:44%;transform:translateZ(90px);display:flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;background:rgba(10,10,7,.72);border:1px solid var(--line2);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);white-space:nowrap}
+.me-tag i{width:6px;height:6px;border-radius:50%;background:var(--teal);box-shadow:0 0 10px var(--teal)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:40px;align-items:end}
+.hero-left{max-width:820px}
+.hud-line{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:26px}
+.name{margin:0;font-family:var(--display);font-weight:300;font-size:clamp(42px,6.9vw,112px);line-height:.98;letter-spacing:-.035em}
+.name .ln{display:block}
+.title-row{display:flex;align-items:center;gap:16px;margin-top:26px;flex-wrap:wrap}
+.title-row strong{font-family:var(--display);font-weight:400;font-size:clamp(16px,1.5vw,21px);letter-spacing:.01em}
+.pulse{width:9px;height:9px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 0 rgba(226,118,78,.6);animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(226,118,78,.55)}70%{box-shadow:0 0 0 14px rgba(226,118,78,0)}100%{box-shadow:0 0 0 0 rgba(226,118,78,0)}}
+.statement{margin:28px 0 0;max-width:640px;font-size:clamp(19px,1.7vw,24px);line-height:1.45;color:var(--ice2)}
+.statement b{color:var(--ice);font-weight:500}
+.hero-cta{display:flex;gap:14px;align-items:center;margin-top:34px;flex-wrap:wrap}
+.proof{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:40px;max-width:640px}
+.proof .panel{padding:20px 20px 18px;border-radius:14px}
+.proof b{display:block;font-family:var(--display);font-weight:300;font-size:clamp(24px,2.2vw,34px);line-height:1.05;color:var(--ice)}
+.proof b em{font-style:normal;color:var(--teal)}
+.proof span{display:block;margin-top:10px;font-size:13.5px;color:var(--mute);line-height:1.45}
+.scroll-cue{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-cue i{width:1px;height:42px;background:linear-gradient(var(--teal),transparent);animation:cue 2.2s var(--ease) infinite;transform-origin:top}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+
+/* process engine */
+.engine{padding:clamp(72px,8vw,120px) 0 clamp(96px,10vw,140px)}
+.engine-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.engine-head .h2 em{font-style:normal;color:var(--orange)}
+.ind{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.ind button{min-height:42px;padding:0 16px;border-radius:999px;border:1px solid var(--line2);background:rgba(10,10,7,.4);cursor:pointer;font-size:14px;color:var(--ice2);transition:all .3s var(--ease)}
+.ind button:hover{border-color:var(--teal);color:var(--ice)}
+.ind button[aria-selected="true"]{background:var(--teal);border-color:var(--teal);color:#021014;box-shadow:0 0 24px -4px rgba(46,216,220,.7)}
+.ind a{font-size:14px;text-underline-offset:4px;color:var(--orange2);padding:0 6px;min-height:42px;display:inline-flex;align-items:center}
+.stagebox{position:relative;border-radius:22px;overflow:hidden;border:1px solid var(--line);background:radial-gradient(ellipse 60% 90% at 50% 50%,rgba(110,106,51,.32),transparent 70%),radial-gradient(ellipse 40% 60% at 85% 100%,rgba(184,99,74,.12),transparent 70%),var(--void2)}
+.helix-wrap{position:relative;height:clamp(300px,36vw,460px)}
+#helix{position:absolute;inset:0;width:100%;height:100%;display:block}
+.judg{position:absolute;left:clamp(16px,3vw,32px);right:clamp(16px,3vw,32px);top:18px;display:flex;align-items:center;gap:14px;pointer-events:none}
+.judg i{flex:1;height:1px;background:linear-gradient(90deg,var(--teal),var(--orange));box-shadow:0 0 10px rgba(46,216,220,.6);transform-origin:left}
+.labels{position:absolute;inset:0;pointer-events:none}
+.stage{position:absolute;left:0;top:0;pointer-events:auto;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px 10px;min-height:44px;background:none;border:0;cursor:pointer;white-space:nowrap}
+.stage .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--mute)}
+.stage .l{font-size:14px;color:var(--ice2);padding:6px 12px;border-radius:999px;border:1px solid transparent;transition:all .35s var(--ease)}
+.stage:hover .l{border-color:var(--line2)}
+.stage.on .l{color:#021014;background:var(--teal);box-shadow:0 0 22px -2px rgba(46,216,220,.8)}
+.stage.ai .l{color:var(--orange2)}
+.stage.ai.on .l{color:#1C0B04;background:var(--orange);box-shadow:0 0 26px -2px rgba(226,118,78,.9)}
+.readout{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,8fr) auto;gap:24px;align-items:center;padding:22px clamp(18px,3vw,32px);border-top:1px solid var(--line)}
+.readout .rk b{display:block;font-family:var(--display);font-weight:300;font-size:clamp(22px,2vw,30px);line-height:1.1}
+.readout p{margin:0;font-size:clamp(16px,1.3vw,19px);color:var(--ice2)}
+.playbtn{width:44px;height:44px;border-radius:999px;border:1px solid var(--line2);background:transparent;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;color:var(--ice)}
+.playbtn:hover{border-color:var(--teal)}
+.list-stages{display:none}
+.example-note{margin-top:14px;font-size:12.5px;color:var(--mute)}
+
+/* work */
+.work-list{border-top:1px solid var(--line2)}
+.proj{border-bottom:1px solid var(--line2);position:relative}
+.proj-btn{width:100%;display:grid;grid-template-columns:70px minmax(0,1fr) minmax(0,auto) 46px;gap:20px;align-items:center;padding:clamp(24px,2.8vw,36px) 0;background:none;border:0;text-align:left;cursor:pointer;position:relative}
+.proj-btn::before{content:"";position:absolute;left:0;right:0;top:0;bottom:0;background:linear-gradient(90deg,rgba(46,216,220,.07),transparent 60%);opacity:0;transition:opacity .4s}
+.proj-btn:hover::before,.proj.open .proj-btn::before{opacity:1}
+.proj-num{font-family:var(--mono);font-size:12px;color:var(--teal)}
+.proj-title{font-family:var(--display);font-weight:300;font-size:clamp(28px,4.4vw,66px);line-height:1;letter-spacing:-.03em;display:inline-block;transition:transform .6s var(--ease),color .3s}
+.proj-btn:hover .proj-title,.proj.open .proj-title{transform:translateX(12px)}
+.proj-btn:hover .proj-title{color:var(--teal)}
+.proj-meta{display:flex;flex-direction:column;align-items:flex-end;gap:8px;text-align:right}
+.tag{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border-radius:999px;border:1px solid var(--line2);color:var(--ice2);white-space:nowrap}
+.tag.pro{border-color:rgba(226,118,78,.45);color:var(--orange2)}
+.proj-teaser{font-size:14px;color:var(--mute)}
+.plus{width:46px;height:46px;border-radius:999px;border:1px solid var(--line2);position:relative;transition:background .3s,border-color .3s,transform .5s var(--ease),box-shadow .3s}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1.5px;background:var(--ice);transform:translate(-50%,-50%)}
+.plus::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .4s var(--ease)}
+.proj.open .plus{background:var(--teal);border-color:var(--teal);transform:rotate(180deg);box-shadow:0 0 22px rgba(46,216,220,.6)}
+.proj.open .plus::before,.proj.open .plus::after{background:#021014}
+.proj.open .plus::after{transform:translate(-50%,-50%) rotate(0)}
+.proj-panel{overflow:hidden}
+.proj-panel[hidden]{display:none}
+.proj-body{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,4vw,64px);padding:6px 0 clamp(40px,4.4vw,64px) 90px}
+.proj-visual{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line);margin-bottom:22px}
+.proj-visual img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.06);transition:transform 1.4s var(--ease)}
+.proj.open .proj-visual img{transform:scale(1)}
+.proj-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(10,10,7,.7));pointer-events:none}
+.proj-visual .mono{position:absolute;left:14px;bottom:12px;z-index:1;color:var(--ice2)}
+.desc{margin:0;font-size:clamp(19px,1.6vw,23px);line-height:1.45;color:var(--ice)}
+.plain{margin:16px 0 0;font-size:16px;color:var(--ice2)}
+.rolebox{margin-top:22px;padding:18px 20px;border-radius:12px;border:1px solid rgba(226,118,78,.28);background:rgba(226,118,78,.06)}
+.rolebox small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--orange2)}
+.rolebox p{margin:6px 0 0;font-size:15px;color:var(--ice)}
+.dia-wrap{padding:clamp(20px,2.4vw,30px);border-radius:16px}
+.dia-title{margin-bottom:18px}
+.dia{display:flex;flex-wrap:wrap;align-items:center;gap:10px 0}
+.dia .n{font-size:13.5px;padding:10px 14px;border-radius:8px;border:1px solid var(--line2);background:rgba(10,10,7,.5);color:var(--ice2)}
+.dia .n.ai{border-color:var(--orange);color:var(--orange2);box-shadow:0 0 20px -6px rgba(226,118,78,.8)}
+.dia .n.det{border-color:var(--teal);color:var(--ice);box-shadow:0 0 20px -8px rgba(46,216,220,.8)}
+.dia .n.out{background:var(--ice);color:var(--void);border-color:var(--ice);font-weight:600}
+.dia .c{width:24px;height:1px;background:linear-gradient(90deg,var(--teal),var(--orange))}
+.branch{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center}
+.branch .split{display:flex;flex-direction:column;gap:8px}
+.dia-note{margin:16px 0 0;font-size:14px;color:var(--mute)}
+.pts{list-style:none;margin:22px 0 0;padding:20px 0 0;border-top:1px solid var(--line);display:grid;gap:12px}
+.pts li{display:grid;grid-template-columns:16px 1fr;gap:10px;font-size:15px;color:var(--ice2)}
+.pts li::before{content:"";width:7px;height:7px;border-radius:2px;background:var(--teal);box-shadow:0 0 10px var(--teal);margin-top:8px;transform:rotate(45deg)}
+.also{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:56px}
+.also .panel{padding:24px}
+.also h3{margin:12px 0 0;font-family:var(--display);font-weight:400;font-size:19px}
+.also p{margin:8px 0 0;font-size:15px;color:var(--ice2)}
+
+
+.split2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-top:22px}
+.eng,.aifit{padding:18px 20px;border-radius:12px}
+.eng{border:1px solid var(--line3);background:rgba(46,216,220,.05)}
+.aifit{border:1px solid rgba(226,118,78,.28);background:rgba(226,118,78,.05)}
+.eng small,.aifit small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px}
+.eng small{color:var(--teal)}.aifit small{color:var(--orange2)}
+.eng ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.eng li{font-size:13px;padding:5px 10px;border-radius:999px;border:1px solid var(--line2);color:var(--ice)}
+.aifit p{margin:0;font-size:14.5px;color:var(--ice2)}
+@media (max-width:720px){.split2{grid-template-columns:1fr}}
+/* think */
+#thinking{background:linear-gradient(180deg,transparent,rgba(44,42,18,.45) 18%,rgba(44,42,18,.45) 82%,transparent)}
+.think-pin{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(40px,6vw,96px);align-items:center}
+.dial{position:relative;width:min(100%,480px);aspect-ratio:1;margin:0 auto}
+.dial svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.dial-rot{position:absolute;inset:0}
+.dnode{position:absolute;transform:translate(-50%,-50%);min-width:116px;min-height:52px;padding:8px 14px;border-radius:999px;border:1px solid var(--line2);background:rgba(10,10,7,.75);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:14px;color:var(--ice2);transition:background .35s,color .35s,border-color .35s,box-shadow .35s}
+.dnode small{font-family:var(--mono);font-size:10px;opacity:.75}
+.dnode.on{background:var(--teal);color:#021014;border-color:var(--teal);box-shadow:0 0 30px -4px rgba(46,216,220,.8)}
+.dial-center{position:absolute;inset:32%;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;pointer-events:none;background:radial-gradient(circle,rgba(233,211,174,.16),rgba(110,106,51,.18) 55%,transparent 72%)}
+.dial-center b{font-family:var(--display);font-weight:300;font-size:clamp(20px,2vw,28px);line-height:1.1;margin-top:4px}
+.tpanels{position:relative}
+.tpanel{padding:clamp(26px,3.4vw,48px)}
+.tpanel+.tpanel{margin-top:16px}
+.pinmode .tpanels{min-height:520px}
+.pinmode .tpanel{position:absolute;inset:0;margin:0}
+.tpanel h3{margin:10px 0 0;font-family:var(--display);font-weight:300;font-size:clamp(38px,4.4vw,64px);line-height:1;letter-spacing:-.03em}
+.tpanel .tl{margin:16px 0 0;font-size:17px;color:var(--ice2)}
+.tpanel .tf{margin:14px 0 0;color:var(--teal);line-height:1.6}
+.tpanel ul{list-style:none;margin:22px 0 0;padding:0}
+.tpanel li{display:grid;grid-template-columns:28px 1fr;padding:14px 0;border-top:1px solid var(--line);font-size:clamp(18px,1.6vw,22px);line-height:1.38}
+.tpanel li::before{content:"?";font-family:var(--mono);font-size:13px;color:var(--orange);padding-top:4px}
+.dial-box{display:none}
+.pinmode .dial-box{display:block}
+.think-progress{display:none}
+.pinmode .think-progress{display:flex;gap:6px;margin-top:24px}
+.think-progress i{height:2px;flex:1;background:var(--line2);position:relative;overflow:hidden}
+.think-progress i b{position:absolute;inset:0;background:var(--teal);box-shadow:0 0 8px var(--teal);transform:scaleX(0);transform-origin:left}
+
+/* philosophy */
+.phil{overflow:hidden}
+.phil-grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(32px,4vw,64px);align-items:center}
+.phil-big{margin:24px 0 0;font-family:var(--display);font-weight:300;font-size:clamp(30px,3.8vw,58px);line-height:1.1;letter-spacing:-.025em}
+.phil-body{margin-top:36px;font-size:clamp(17px,1.4vw,20px);line-height:1.65;color:var(--ice2)}
+.phil-body p{margin:0 0 16px}
+.phil-sign{margin-top:40px;padding-top:24px;border-top:1px solid var(--line2)}
+.phil-sign p{margin:0;font-family:var(--display);font-weight:300;font-size:clamp(22px,2.4vw,34px);line-height:1.2}
+.phil-sign span{display:block;margin-top:10px}
+.cage{position:relative;aspect-ratio:1;width:100%;max-width:640px;margin:0 auto;border-radius:24px;background:radial-gradient(circle at 50% 50%,rgba(46,216,220,.12),transparent 62%)}
+#cageCanvas{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:pan-y}
+#cageCanvas:active{cursor:grabbing}
+.cage-fallback{position:absolute;inset:6%;border-radius:20px;background:url("assets/images/philosophy-cage.webp") center/cover;opacity:0;transition:opacity .4s}
+.no3d .cage-fallback{opacity:1}
+.vlabels{position:absolute;inset:0;pointer-events:none}
+.vlabel{position:absolute;left:0;top:0;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ice2);padding:5px 9px;border-radius:999px;background:rgba(10,10,7,.7);border:1px solid var(--line2);white-space:nowrap;transform:translate(-50%,-50%);transition:opacity .3s}
+.cage-hint{position:absolute;left:50%;bottom:6px;transform:translateX(-50%)}
+
+/* capabilities */
+.caps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.cap{position:relative;overflow:hidden;border-radius:18px;border:1px solid var(--line);background:var(--glass);padding:clamp(26px,2.6vw,36px);display:flex;flex-direction:column;min-height:320px;--mx:50%;--my:50%;transition:border-color .4s,transform .6s var(--ease)}
+.cap::before{content:"";position:absolute;inset:0;background:radial-gradient(380px circle at var(--mx) var(--my),rgba(46,216,220,.16),transparent 60%);opacity:0;transition:opacity .4s;pointer-events:none}
+.cap:hover{border-color:var(--line3)}
+.cap:hover::before{opacity:1}
+.cap>*{position:relative}
+.cap .orb{position:absolute;right:-6%;top:-8%;width:46%;aspect-ratio:1;border-radius:50%;overflow:hidden;opacity:.85;-webkit-mask-image:radial-gradient(circle,#000 58%,transparent 71%);mask-image:radial-gradient(circle,#000 58%,transparent 71%);transition:transform 1.2s var(--ease)}
+.cap .orb img{width:100%;height:100%;object-fit:cover;display:block}
+.cap:hover .orb{transform:rotate(14deg) scale(1.05)}
+.cap .cn{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--teal)}
+.cap h3{margin:20px 0 0;font-family:var(--display);font-weight:400;font-size:clamp(19px,1.6vw,23px);line-height:1.2;max-width:70%}
+.cap .what{margin:14px 0 0;font-size:16px;font-weight:500;color:var(--ice)}
+.cap .help{margin:10px 0 0;font-size:15px;color:var(--ice2);flex:1}
+.cap .tech{margin:22px 0 0;padding-top:14px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;color:var(--mute)}
+.cap.lead{grid-column:1/-1;min-height:400px;border-color:rgba(233,211,174,.32);background:radial-gradient(ellipse at 80% 20%,rgba(46,216,220,.14),transparent 55%),radial-gradient(ellipse at 30% 120%,rgba(110,106,51,.45),transparent 60%),radial-gradient(ellipse at 0% 0%,rgba(235,201,196,.08),transparent 50%),var(--glass2)}
+.cap.lead .orb{width:38%;right:2%;top:6%}
+.cap.lead h3{font-family:var(--display);font-weight:300;font-size:clamp(28px,3.2vw,46px);max-width:60%}
+.cap.lead .what{font-size:clamp(17px,1.4vw,20px);color:var(--teal)}
+.cap.lead .help{max-width:58%}
+.cap.lead .cn span{color:var(--orange2);margin-left:14px}
+.cap.wide{grid-column:span 1}
+.spec-head{grid-column:1/-1;display:flex;align-items:center;gap:16px;margin:28px 0 4px}
+.spec-head i{flex:1;height:1px;background:linear-gradient(90deg,var(--orange),transparent)}
+.spec-head .mono{color:var(--orange2)}
+.cap.ai .cn{color:var(--orange2)}
+.cap.ai:hover{border-color:rgba(226,118,78,.4)}
+.cap.ai::before{background:radial-gradient(380px circle at var(--mx) var(--my),rgba(226,118,78,.12),transparent 60%)}
+.stack{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:22px;max-width:60%}
+.stack span{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;text-align:center;padding:10px 6px;border-radius:8px;border:1px solid var(--line2);color:var(--ice2)}
+.stack span.x{border-color:rgba(226,118,78,.45);color:var(--orange2)}
+.teams{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:24px;align-items:center;padding:28px 32px;border-radius:18px}
+.teams p{margin:0}
+@media (max-width:720px){.stack{max-width:none;grid-template-columns:repeat(2,minmax(0,1fr))}.teams{grid-template-columns:1fr}}
+.cap.quote{background:radial-gradient(ellipse at 30% 80%,rgba(184,99,74,.28),transparent 60%),radial-gradient(ellipse at 90% 0%,rgba(235,201,196,.12),transparent 60%),var(--void2);border-color:rgba(235,201,196,.28);justify-content:flex-end}
+.cap.quote p{margin:0;font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(30px,2.9vw,44px);line-height:1.1;color:var(--blush)}
+
+/* constraints */
+.checks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.check{padding:22px 22px 24px;border-radius:14px}
+.check .top{display:flex;justify-content:space-between;align-items:center}
+.check svg{width:24px;height:24px}
+.check svg circle{stroke:var(--line3)}
+.check svg path{stroke:var(--teal);stroke-dasharray:24;stroke-dashoffset:0;filter:drop-shadow(0 0 4px rgba(46,216,220,.8))}
+.check h3{margin:18px 0 0;font-size:16px;font-weight:600}
+.check p{margin:6px 0 0;font-size:14.5px;color:var(--ice2)}
+.check .bar{margin-top:16px;height:2px;border-radius:2px;background:var(--line);overflow:hidden}
+.check .bar i{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--teal),var(--orange));transform-origin:left}
+
+/* experience */
+.exp{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,5vw,80px)}
+.exp-card{padding:clamp(28px,3vw,44px)}
+.exp-co{margin:16px 0 0;font-family:var(--display);font-weight:300;font-size:clamp(40px,5vw,76px);line-height:1;letter-spacing:-.035em}
+.exp-role{margin:16px 0 0;font-family:var(--display);font-size:15px;color:var(--teal)}
+.exp-stat{display:flex;gap:28px;margin-top:32px;flex-wrap:wrap}
+.exp-stat b{display:block;font-family:var(--display);font-weight:300;font-size:34px}
+.exp-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.pill{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid var(--line2);border-radius:999px;text-decoration:none;font-size:14px;transition:all .3s var(--ease)}
+.pill:hover{border-color:var(--teal);background:rgba(46,216,220,.1);color:var(--ice)}
+.resp{list-style:none;margin:28px 0 0;padding:0;counter-reset:r}
+.resp li{display:grid;grid-template-columns:44px 1fr;padding:18px 0;border-top:1px solid var(--line);font-size:16px;color:var(--ice2)}
+.resp li:last-child{border-bottom:1px solid var(--line)}
+.resp li::before{counter-increment:r;content:"0" counter(r);font-family:var(--mono);font-size:12px;color:var(--teal);padding-top:3px}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(36px,6vw,96px);align-items:center}
+.about-visual{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:7/5;border:1px solid var(--line)}
+.about-visual img{width:100%;height:100%;object-fit:cover;display:block;will-change:transform}
+.about-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,7,.0),rgba(10,10,7,.25)),linear-gradient(0deg,rgba(10,10,7,.6),transparent 40%)}
+.path{position:absolute;left:22px;bottom:20px;z-index:1;display:flex;gap:8px;flex-wrap:wrap}
+.path span{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:6px 10px;border-radius:999px;border:1px solid var(--line2);background:rgba(10,10,7,.6);color:var(--ice2)}
+.path span:last-child{border-color:var(--blush);color:var(--blush)}
+.about-text{font-size:clamp(17px,1.4vw,20px);line-height:1.7;color:var(--ice2)}
+.about-text p{margin:0 0 20px}
+
+/* contact */
+.contact{overflow:hidden}
+.contact-glow{position:absolute;left:50%;top:50%;width:min(1100px,120vw);aspect-ratio:1;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(235,201,196,.16),rgba(110,106,51,.18) 38%,rgba(184,99,74,.08) 55%,transparent 68%);pointer-events:none;z-index:-1}
+.contact-big{margin:22px 0 0;font-family:var(--display);font-weight:300;font-size:clamp(36px,6.4vw,104px);line-height:1.02;letter-spacing:-.04em;max-width:1240px}
+.contact-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;margin-top:clamp(40px,5vw,64px);align-items:end}
+.contact-grid .lead p{margin:0 0 16px}
+.contact-side{display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.contact-side .btn{min-height:66px;padding:0 36px;font-size:17px}
+.contact-side small{font-size:14px;color:var(--mute);max-width:380px}
+.personal{font-size:15px;color:var(--orange2);min-height:1.4em;margin:0}
+
+/* footer */
+.ftr{padding:72px 0 40px;overflow:hidden;border-top:1px solid var(--line)}
+.ftr-row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.ftr-row nav{display:flex;gap:28px;font-size:15px}
+.wordmark{margin-top:56px;font-family:var(--display);font-weight:300;font-size:clamp(34px,7.4vw,132px);line-height:.95;letter-spacing:-.05em}
+.wordmark .mono{display:block;margin-top:18px;letter-spacing:.12em}
+
+/* cursor */
+.cursor{position:fixed;left:0;top:0;z-index:90;pointer-events:none;display:none;mix-blend-mode:normal}
+.has-cursor .cursor{display:block}
+.cursor .ring{position:absolute;width:36px;height:36px;margin:-18px 0 0 -18px;border:1px solid var(--teal);border-radius:50%;box-shadow:0 0 14px rgba(46,216,220,.35);display:flex;align-items:center;justify-content:center;transition:width .35s var(--ease),height .35s var(--ease),margin .35s var(--ease),background .3s}
+.cursor .ring em{font-style:normal;font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#021014;opacity:0;transition:opacity .2s}
+.cursor.big .ring{width:78px;height:78px;margin:-39px 0 0 -39px;background:var(--teal)}
+.cursor.big .ring em{opacity:1}
+
+@media (max-width:1060px){
+  .nav{display:none}.menu-btn{display:inline-flex}
+  .hero-grid,.think-pin,.exp,.about,.contact-grid,.phil-grid{grid-template-columns:1fr}
+    .hero{padding-top:58vh}
+  .me-stage{right:auto;left:50%;bottom:auto;top:calc(env(safe-area-inset-top,0px) + 70px);height:56vh;width:calc(56vh * 398 / 749);margin-left:calc(56vh * 398 / 749 / -2)}
+  .proof{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .me-tag{left:auto;right:-14%;top:30%}
+  .proj-body{grid-template-columns:1fr;padding-left:0}
+  .caps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .checks{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sec-head{grid-template-columns:1fr;gap:16px}
+  .cap.quote{grid-column:span 2;min-height:200px}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .hero{padding-top:52vh}
+  .me-stage{height:48vh;width:calc(48vh * 398 / 749);margin-left:calc(48vh * 398 / 749 / -2)}
+  .proof{grid-template-columns:1fr 1fr}
+  .me-tag{display:none}
+  .labels{display:none}
+  .helix-wrap{height:240px}
+  .list-stages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;padding:14px 16px 0}
+  .list-stages button{min-height:44px;border-radius:10px;border:1px solid var(--line2);background:transparent;font-size:14px;color:var(--ice2);cursor:pointer;text-align:left;padding:0 12px}
+  .list-stages button.on{background:var(--teal);color:#021014;border-color:var(--teal)}
+  .list-stages button.ai{color:var(--orange2)}
+  .list-stages button.ai.on{background:var(--orange);color:#1C0B04}
+  .readout{grid-template-columns:1fr auto;gap:10px}
+  .readout p{grid-column:1/-1;grid-row:2}
+  .proj-btn{grid-template-columns:minmax(0,1fr) 46px;gap:14px}
+  .proj-num,.proj-teaser{display:none}
+  .proj-meta{grid-column:1;grid-row:2;align-items:flex-start;text-align:left}
+  .plus{grid-column:2;grid-row:1}
+  .proj-btn:hover .proj-title,.proj.open .proj-title{transform:none}
+  .dia{flex-direction:column;align-items:stretch}
+  .dia .c{width:1px;height:14px;margin-left:20px}
+  .branch{grid-template-columns:1fr}
+  .also,.caps,.checks{grid-template-columns:1fr}
+  .cap.lead,.cap.wide,.cap.quote{grid-column:auto}
+  .cap.lead h3,.cap.lead .help,.cap h3{max-width:none}
+  .cap .orb{width:34%;opacity:.55}
+  .contact-side .btn{width:100%}
+  .scroll-cue{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top" aria-label="Layan Khalil Ibrahim, home"><span class="brand-mark" aria-hidden="true"></span><span><b>Layan Khalil Ibrahim</b><span>AI Product Engineer</span></span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#thinking">How I Think</a>
+      <a href="#about">About</a>
+      <a class="btn magnetic" href="#contact">Work With Me</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="sheet" aria-label="Open menu"><i></i></button>
+  </div>
+</header>
+<div class="sheet" id="sheet" aria-label="Menu">
+  <a href="#work">Work</a>
+  <a href="#thinking">How I Think</a>
+  <a href="#about">About</a>
+  <a class="btn" href="#contact">Work With Me</a>
+</div>
+<div class="cursor" id="cursor" aria-hidden="true"><div class="ring"><em id="cursorLabel">Open</em></div></div>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="heroName">
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="me-stage" id="meStage">
+    <div class="me-sway" id="meSway">
+      <div class="me-card" id="meCard">
+        <div class="me-floor" aria-hidden="true"></div>
+        <img class="me-layer me-ghost-t" src="assets/images/layan.webp" alt="" aria-hidden="true">
+        <img class="me-layer me-ghost-o" src="assets/images/layan.webp" alt="" aria-hidden="true">
+        <img class="me-layer me-img" src="assets/images/layan.webp" alt="Layan Khalil Ibrahim" fetchpriority="high">
+        <div class="me-sheen" id="meSheen" aria-hidden="true"></div>
+        <div class="me-tag" aria-hidden="true"><i></i><span class="mono">Software engineer · AI products</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="hud-line" data-intro><span class="mono tag-hud">Software engineer · Computer science foundation</span><span class="mono">Specialised in AI products</span></div>
+        <h1 class="name" id="heroName"><span class="ln" data-split>Layan Khalil</span><span class="ln grad" data-split>Ibrahim</span></h1>
+        <div class="title-row" data-intro><span class="pulse" aria-hidden="true"></span><strong>AI Product Engineer</strong></div>
+        <p class="statement" data-intro>I build <b>software and intelligent solutions</b> to solve <span class="ser" style="color:var(--blush);font-size:1.12em">real-world problems.</span> I engineer the whole system, from architecture and application logic to data and deployment, and I decide where AI belongs inside it.</p>
+        <div class="hero-cta" data-intro>
+          <a class="btn magnetic" href="#work" data-cursor="View">See the systems I've built <span class="arr" aria-hidden="true">→</span></a>
+          <a class="ghost" href="#engine">Watch the process</a>
+        </div>
+        <div class="proof" aria-label="At a glance">
+        <div class="panel brk" data-intro><b>End to end</b><span>Complete software products: frontend, backend, data and deployment</span></div>
+        <div class="panel" data-intro><b>From scratch</b><span>Architected AuthorityOS at Klover.AI: system architecture, data structure, product flows</span></div>
+        <div class="panel" data-intro><b><em data-count="5">5</em> systems</b><span>Featured work, from a live product to production-oriented platforms</span></div>
+        <div class="panel brk" data-intro><b><em data-count="20" data-prefix="~">~20</em> agents</b><span>AI specialisation: one multi-agent pipeline, kept under deterministic application logic</span></div>
+      </div>
+</div>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span class="mono">Scroll</span><i></i></div>
+</section>
+
+<section class="engine" id="engine" aria-labelledby="engineTitle">
+  <div class="wrap">
+    <div class="engine-head">
+      <div>
+        <div class="mono tag-hud" style="margin-bottom:16px">The process engine</div>
+        <h2 class="h2" id="engineTitle">One process. <em>Any industry.</em></h2>
+      </div>
+      <div class="ind" role="tablist" aria-label="Choose an industry" id="industries"></div>
+    </div>
+    <div class="stagebox">
+      <div class="helix-wrap" id="helixWrap">
+        <canvas id="helix" aria-hidden="true"></canvas>
+        <div class="judg" aria-hidden="true"><span class="mono">Engineering judgment</span><i id="judgLine"></i><span class="mono">every stage</span></div>
+        <div class="labels" id="labels" role="tablist" aria-label="Stages"></div>
+      </div>
+      <div class="list-stages" id="listStages" role="tablist" aria-label="Stages"></div>
+      <div class="readout" aria-live="polite">
+        <div class="rk"><span class="mono" id="roInd">Healthcare</span><b id="roStage">Problem</b></div>
+        <p id="roText"></p>
+        <button class="playbtn" id="playBtn" aria-label="Pause walkthrough"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path id="playIcon" d="M3 2h3v10H3zM8 2h3v10H8z"/></svg></button>
+      </div>
+    </div>
+    <p class="example-note">Illustrative walkthroughs of how the process applies across industries, not client case studies.</p>
+  </div>
+</section>
+
+<section class="sec" id="work" aria-labelledby="workTitle">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono tag-hud">01 · Selected Work</div>
+      <h2 class="h2" id="workTitle" data-reveal>Complete software systems. <span class="ser" style="color:var(--stone)">AI where it earns its place.</span> <span class="grad">The same approach every time:</span> understand the problem, design the solution, build it.</h2>
+    </div>
+    <div class="work-list" id="workList">
+      <article class="proj open">
+        <button class="proj-btn" aria-expanded="true" aria-controls="p1" data-cursor="Close">
+          <span class="proj-num">01</span>
+          <span class="proj-title">AuthorityOS</span>
+          <span class="proj-meta"><span class="tag pro">Professional · Klover.AI</span><span class="proj-teaser">Reputation intelligence for B2B decisions</span></span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="proj-panel" id="p1">
+          <div class="proj-body">
+            <div>
+              <p class="desc">An AI-powered reputation intelligence platform designed to turn fragmented information into structured intelligence for B2B decision-making.</p>
+              <div class="rolebox"><small>My role</small><p>AI Product Engineer. Architected and built the platform from scratch, defining its system architecture, product flows, data structure and multi-agent design.</p></div><div class="split2"><div class="eng"><small>What I engineered</small><ul><li>System architecture</li><li>Product flows</li><li>Data structure</li><li>Deterministic application logic</li><li>Validation & evaluation</li></ul></div><div class="aifit"><small>Where AI fits</small><p>A ~20-agent pipeline handles research and processing. Critical business logic stays in controlled software, not under direct LLM control.</p></div></div>
+            </div>
+            <div>
+              <div class="panel dia-wrap">
+                <div class="mono dia-title">How it works, at a high level</div>
+                <div class="dia"><span class="n">Fragmented information</span><span class="c"></span><span class="n ai">~20-agent AI pipeline</span><span class="c"></span><span class="n det">Deterministic application logic</span><span class="c"></span><span class="n">Validation and evaluation</span><span class="c"></span><span class="n out">Structured intelligence</span></div>
+                <p class="dia-note">AI does the research and processing. Critical business logic stays in controlled software.</p>
+              </div>
+              <ul class="pts">
+                <li>Owned key architectural and product decisions from design through implementation.</li>
+                <li>Combined AI reasoning with deterministic application logic, keeping critical business logic under controlled software rather than direct LLM control.</li>
+                <li>Designed validation and evaluation processes to improve system reliability.</li>
+                <li>Designed and orchestrated a ~20-agent AI pipeline for research, processing and structured intelligence.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj">
+        <button class="proj-btn" aria-expanded="false" aria-controls="p2" data-cursor="Open">
+          <span class="proj-num">02</span>
+          <span class="proj-title">Seratonin</span>
+          <span class="proj-meta"><span class="tag pro">Professional · Klover.AI · In Development</span><span class="proj-teaser">Content intelligence for founders</span></span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="proj-panel" id="p2" hidden>
+          <div class="proj-body">
+            <div>
+              <p class="desc">An AI-powered content intelligence platform designed to help founders turn their knowledge, ideas and content workflows into a structured system.</p>
+              <div class="rolebox"><small>My role</small><p>AI Product Engineer. Driving technical development across AI systems, product workflows, technical performance and production readiness.</p></div><div class="split2"><div class="eng"><small>What I engineered</small><ul><li>Product workflows</li><li>Technical performance</li><li>Production readiness</li><li>Post-launch monitoring</li></ul></div><div class="aifit"><small>Where AI fits</small><p>AI systems run inside the product’s content and knowledge workflows, and their behaviour is monitored as the platform scales.</p></div></div>
+            </div>
+            <div>
+              <div class="panel dia-wrap">
+                <div class="mono dia-title">Where my work continues</div>
+                <div class="dia"><span class="n">Build</span><span class="c"></span><span class="n">Launch</span><span class="c"></span><span class="n ai">Observe</span><span class="c"></span><span class="n">Validate</span><span class="c"></span><span class="n">Improve</span><span class="c"></span><span class="n out">Scale</span></div>
+                <p class="dia-note">I continue working on the platform through production and post-launch growth, monitoring technical performance, AI behaviour and user engagement as it scales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj">
+        <button class="proj-btn" aria-expanded="false" aria-controls="p3" data-cursor="Open">
+          <span class="proj-num">03</span>
+          <span class="proj-title">Person Research Agent</span>
+          <span class="proj-meta"><span class="tag">Independent Project</span><span class="proj-teaser">Multi-agent research, cross-checked</span></span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="proj-panel" id="p3" hidden>
+          <div class="proj-body">
+            <div>
+              <p class="desc">A multi-agent research system that turns fragmented information from multiple sources into structured, cross-checked intelligence.</p>
+              <p class="plain">Research is often fragmented, repetitive and hard to verify. Instead of asking one AI to “do research”, the system gives specialised agents defined jobs inside a controlled workflow.</p>
+              <div class="rolebox"><small>My role</small><p>Designed and built the system end to end.</p></div><div class="split2"><div class="eng"><small>What I engineered</small><ul><li>End-to-end system</li><li>Controlled workflow</li><li>Structured output</li></ul></div><div class="aifit"><small>Where AI fits</small><p>Specialised agents each do one defined job: gather, extract, cross-check, synthesize. The workflow decides what reaches the output.</p></div></div>
+            </div>
+            <div>
+              <div class="panel dia-wrap">
+                <div class="mono dia-title">The workflow</div>
+                <div class="dia"><span class="n">Gather information</span><span class="c"></span><span class="n">Extract relevant signals</span><span class="c"></span><span class="n ai">Cross-check findings</span><span class="c"></span><span class="n">Synthesize</span><span class="c"></span><span class="n out">Structured intelligence</span></div>
+                <p class="dia-note">Each agent has one job. Nothing reaches the final output without being cross-checked.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj">
+        <button class="proj-btn" aria-expanded="false" aria-controls="p4" data-cursor="Open">
+          <span class="proj-num">04</span>
+          <span class="proj-title">BrieflyAI</span>
+          <span class="proj-meta"><span class="tag">Independent · Live Product</span><span class="proj-teaser">Video summaries beyond the transcript</span></span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="proj-panel" id="p4" hidden>
+          <div class="proj-body">
+            <div>
+              <p class="desc">An AI-powered video summarization platform that analyzes video beyond the transcript.</p>
+              <p class="plain">Most summarizers only read what was said. BrieflyAI looks at the video itself, so it works on videos with transcripts, without them, and even with no spoken words at all, like music.</p>
+              <div class="rolebox"><small>My role</small><p>Software and AI Engineer. Independently built the product end to end across the frontend, backend, AI processing and deployment.</p></div><div class="split2"><div class="eng"><small>What I engineered</small><ul><li>Frontend</li><li>Backend</li><li>Dual-path processing pipeline</li><li>Deployment</li></ul></div><div class="aifit"><small>Where AI fits</small><p>AI analyses the video itself, with or without a transcript, and produces grounded summaries, insights, notes and timestamps.</p></div></div>
+            </div>
+            <div>
+              <div class="panel dia-wrap">
+                <div class="mono dia-title">Two paths, one grounded result</div>
+                <div class="branch">
+                  <span class="dia"><span class="n">Any video</span></span>
+                  <span class="split"><span class="dia"><span class="n">Transcript available: grounded in what was said</span></span><span class="dia"><span class="n ai">No transcript, or no words: analysis of the video itself</span></span></span>
+                  <span class="dia"><span class="n out">Summary, insights, notes, timestamps</span></span>
+                </div>
+                <p class="dia-note">Every summary is grounded in the original video, whichever path it takes.</p>
+              </div>
+              <ul class="pts">
+                <li>Took the product from development through deployment as a complete working application.</li>
+                <li>Designed a dual-path video processing pipeline for videos with and without available transcripts.</li>
+                <li>Built AI workflows for grounded summaries, insights, notes and timestamps based on the original video content.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj">
+        <button class="proj-btn" aria-expanded="false" aria-controls="p5" data-cursor="Open">
+          <span class="proj-num">05</span>
+          <span class="proj-title">ResHub</span>
+          <span class="proj-meta"><span class="tag">Personal · Team Project</span><span class="proj-teaser">AI-assisted research lifecycle</span></span>
+          <span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="proj-panel" id="p5" hidden>
+          <div class="proj-body">
+            <div><p class="desc">An AI-assisted research platform designed to structure and support the research lifecycle.</p></div>
+            <div><div class="rolebox" style="margin-top:0"><small>My role</small><p>Contributed to the product and technical implementation as part of a three-person team.</p></div><div class="split2"><div class="eng"><small>What I engineered</small><ul><li>Product and technical implementation, as one of three</li></ul></div><div class="aifit"><small>Where AI fits</small><p>AI assists the research lifecycle the platform is designed to structure.</p></div></div></div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="also" data-stagger>
+      <div class="panel"><span class="mono">Also built</span><h3>Speako</h3><p>A voice-powered AI system that turns spoken input into structured actions and workflows.</p></div>
+      <div class="panel"><span class="mono">Also built</span><h3>Multimodal AI Agent</h3><p>Visual understanding, text extraction, translation and structured information processing in one system.</p></div>
+      <div class="panel"><span class="mono">Also built</span><h3>Context-Aware AI Assistant</h3><p>An assistant designed around context, memory and conversation state.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="thinking" aria-labelledby="thinkTitle">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono tag-hud">02 · How I Think</div>
+      <h2 class="h2" id="thinkTitle" data-reveal>I don’t start with “Where can I use AI?” <span class="grad ser">I start with “What does the problem require?”</span></h2>
+    </div>
+    <div class="think-pin" id="thinkPin">
+      <div class="dial-box">
+        <div class="dial" id="dial">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <defs><linearGradient id="arcG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2ED8DC"/><stop offset="1" stop-color="#E2764E"/></linearGradient></defs>
+            <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(233,211,174,.2)" stroke-width=".3"/>
+            <circle cx="50" cy="50" r="27" fill="none" stroke="rgba(233,211,174,.18)" stroke-width=".25" stroke-dasharray=".6 1.4"/>
+            <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(233,211,174,.1)" stroke-width=".2" stroke-dasharray="2 6"/>
+            <circle id="dialArc" cx="50" cy="50" r="38" fill="none" stroke="url(#arcG)" stroke-width=".8" stroke-linecap="round" stroke-dasharray="238.76" stroke-dashoffset="238.76" transform="rotate(-90 50 50)" style="filter:drop-shadow(0 0 1.2px #2ED8DC)"/>
+          </svg>
+          <div class="dial-rot" id="dialRot"></div>
+          <div class="dial-center" aria-hidden="true"><span class="mono" id="dialN">Stage 1 / 6</span><b id="dialName">Understand</b></div>
+        </div>
+        <div class="think-progress" aria-hidden="true" id="thinkBars"></div>
+      </div>
+      <div class="tpanels" id="tpanels"></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec phil" id="philosophy" aria-labelledby="philTitle">
+  <div class="wrap">
+    <div class="phil-grid">
+      <div>
+        <div class="mono tag-hud">03 · My Philosophy</div>
+        <h2 class="phil-big" id="philTitle" data-scrub>AI is a capability inside a system I design and control.</h2>
+        <div class="phil-body" data-scrub>
+          <p>I don't start by asking what AI can do. I start by asking what the problem requires.</p>
+          <p>Then I decide what the system should do, where intelligence belongs, what should stay deterministic, what data AI can reach, and how its output gets checked.</p>
+          <p>I use AI seriously, and it makes me faster at implementation, exploration and problem solving. It doesn’t replace understanding the code, the architecture, the infrastructure, the data, the security boundaries, the system’s behaviour or how its agents interact. That understanding, and the ownership that comes with it, stays with me.</p>
+          <p>AI can be part of the solution. It is never the solution by itself. The technology serves the problem, the system serves the product, and every important decision still passes through engineering judgment.</p>
+        </div>
+        <div class="phil-sign"><p>AI doesn't build the product. <span class="grad ser" style="font-size:1.2em">I do.</span></p><span class="mono">Layan Khalil Ibrahim</span></div>
+      </div>
+      <div class="cage" id="cage">
+        <div class="cage-fallback" aria-hidden="true"></div>
+        <canvas id="cageCanvas" aria-label="A 3D model of an intelligent core held inside a frame of engineering constraints. Drag to rotate." role="img"></canvas>
+        <div class="vlabels" id="vlabels" aria-hidden="true"></div>
+        <span class="mono cage-hint">Drag to rotate · The core sits inside the constraints</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="build" aria-labelledby="buildTitle">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono tag-hud">04 · What I Can Build For You</div>
+      <h2 class="h2" id="buildTitle" data-reveal>Software engineering is the foundation. <span class="grad">AI is the specialisation I build on top of it.</span></h2>
+    </div>
+    <div class="caps" id="caps">
+      <div class="cap lead"><div class="orb" aria-hidden="true"><img src="assets/images/cap-software.webp" alt=""></div><div class="cn">01<span>The foundation of what I do</span></div><h3>Full Software Products</h3><p class="what">From idea to MVP to production.</p><p class="help">Complete products built end to end: understanding the requirements, designing the architecture, then frontend, backend, databases, APIs, integrations, deployment and production systems.</p><div class="stack" aria-label="Layers I build"><span>Frontend</span><span>Backend &amp; APIs</span><span>Data</span><span>Deployment</span><span>Architecture</span><span>Security</span><span>Reliability</span><span class="x">+ AI, where it fits</span></div><p class="tech">Architecture · Frontend · Backend · Databases · APIs · Integrations · Deployment</p></div>
+      <div class="spec-head"><span class="mono">Specialisation · Intelligence built into software</span><i></i></div>
+      <div class="cap ai"><div class="cn">02</div><h3>AI-Powered Web Applications</h3><p class="what">Web products with intelligence built into the experience.</p><p class="help">Your product can answer, search, summarise and analyse, inside the workflow people already use.</p><p class="tech">Chatbots · Assistants · Smart search · Summarization · Content analysis</p></div>
+      <div class="cap ai"><div class="orb" aria-hidden="true"><img src="assets/images/cap-agents.webp" alt=""></div><div class="cn">03</div><h3>AI Agents &amp; Multi-Agent Systems</h3><p class="what">Systems that handle complex tasks through structured AI workflows.</p><p class="help">Research, reasoning and multi-step work done in a controlled, repeatable way.</p><p class="tech">Orchestration · Tool use · State · Evaluation</p></div>
+      <div class="cap ai"><div class="orb" aria-hidden="true"><img src="assets/images/cap-rag.webp" alt=""></div><div class="cn">04</div><h3>RAG &amp; Knowledge Systems</h3><p class="what">AI that answers from your knowledge, within boundaries you control.</p><p class="help">Your documents and data become something people can ask questions of.</p><p class="tech">RAG · Retrieval · Knowledge pipelines · Context management</p></div>
+      <div class="cap ai"><div class="cn">05</div><h3>AI Automation &amp; Intelligent Workflows</h3><p class="what">Repetitive, fragmented processes turned into structured workflows.</p><p class="help">Less manual work and fewer hand-offs, with people kept in the loop where it matters.</p><p class="tech">Automation · Integrations · Human-in-the-loop · Orchestration</p></div>
+      <div class="cap ai wide"><div class="cn">06</div><h3>Custom AI Solutions</h3><p class="what">An AI solution shaped around one specific business or operational problem.</p><p class="help">From understanding the problem and designing the solution to a prototype, MVP or complete system.</p><p class="tech">Problem framing · Solution design · Prototype · MVP · Production</p></div>
+      <div class="cap quote"><p>The technology follows the problem.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="constraints" aria-labelledby="consTitle" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono tag-hud">05 · Engineering Constraints</div>
+      <h2 class="h2" id="consTitle" data-reveal style="font-size:clamp(26px,3.2vw,46px)">A solution isn't finished when it works once. <span class="grad">It's finished when it makes sense as a system.</span></h2>
+    </div>
+    <div class="checks" id="checks"></div>
+  </div>
+</section>
+
+<section class="sec" id="experience" aria-labelledby="expTitle">
+  <div class="wrap">
+    <div class="mono tag-hud" style="margin-bottom:40px">06 · Experience</div>
+    <div class="exp">
+      <div class="panel brk exp-card">
+        <span class="mono">Current</span>
+        <h2 class="exp-co" id="expTitle">Klover.AI</h2>
+        <p class="exp-role">AI Product Engineer · Part-time</p>
+        <div class="exp-stat"><div><b class="grad">2</b><span class="mono">Products</span></div><div><b class="grad">~20</b><span class="mono">Agent pipeline</span></div></div>
+        <div class="exp-links"><a class="pill" href="#work" data-open="0">AuthorityOS</a><a class="pill" href="#work" data-open="1">Seratonin</a></div>
+      </div>
+      <div>
+        <p class="lead" style="margin:0">I engineer AI-powered products on a software engineering foundation: system design, backend, data and application layers, with LLMs, agentic workflows and automation built in where they create value.</p>
+        <ol class="resp" data-stagger>
+          <li>Work across backend, data, application and AI layers, from system design through implementation.</li>
+          <li>Design architectures where critical business logic runs through deterministic application logic, not direct LLM control.</li>
+          <li>Build multi-agent workflows with orchestration, state and job management, validation, evaluation and structured execution.</li>
+          <li>Drive the technical development of Seratonin across AI reliability, technical performance, product workflows and production readiness.</li>
+          <li>Work directly with leadership to translate business requirements and product ideas into practical technical solutions.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="about" aria-labelledby="aboutTitle">
+  <div class="wrap">
+    <div class="mono tag-hud" style="margin-bottom:40px">07 · About</div>
+    <div class="about">
+      <div class="about-visual"><img id="aboutImg" src="assets/images/about.webp" alt="A profile surrounded by teal and orange neural pathways" loading="lazy"><div class="path"><span>Computer science</span><span>Software engineering</span><span>Systems &amp; product engineering</span><span>AI engineering</span><span>AI product engineering</span></div></div>
+      <div>
+        <h2 class="h2" id="aboutTitle" data-reveal>A software engineer <span class="grad">who specialises in intelligent products.</span></h2>
+        <div class="about-text" data-stagger style="margin-top:32px">
+          <p>My foundation is computer science and software engineering: how systems are structured, how data moves through them, and how a product holds together under real use. From there I moved into systems and product engineering, then AI engineering. AI widened what I can build. It didn't change how I build.</p>
+          <p>Today I work as an AI Product Engineer across the whole path from problem to product: understanding what's really needed, designing the architecture, building the software end to end, and deciding where intelligence belongs and how it gets checked.</p>
+          <p>I care most about what happens after the demo, when real people use the thing and it has to keep working.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec contact" id="contact" aria-labelledby="contactTitle">
+  <div class="contact-glow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="mono tag-hud warm">08 · Work With Me</div>
+    <h2 class="contact-big" id="contactTitle" data-split>Have a problem you want to turn into something real?</h2>
+    <div class="contact-grid">
+      <div class="lead" data-stagger>
+        <p>If you're a founder with an idea, a software team or technology company looking to add intelligent capabilities to what you already build, a company with a business or operational problem that needs a software or intelligent solution, or someone who wants to turn a product idea into an MVP — let's talk.</p>
+        <p>We can start with the problem, get to know each other, and see what we can build.</p>
+      </div>
+      <div class="contact-side">
+        <p class="personal" id="personal" aria-live="polite"></p>
+        <a class="btn hot magnetic" href="#contact" data-cursor="Say hi">Let's have a coffee chat <span class="arr" aria-hidden="true">→</span></a>
+        <small>You'll leave the conversation with a clearer picture of your problem, whether or not we end up building it together.</small>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-row">
+      <div><div style="font-family:var(--display);font-size:18px">Layan Khalil Ibrahim</div><div class="mono" style="margin-top:6px">AI Product Engineer</div></div>
+      <nav aria-label="Elsewhere"><a href="#contact">LinkedIn</a><a href="#contact">GitHub</a><a href="#contact">Email</a></nav>
+    </div>
+    <div class="wordmark" aria-hidden="true"><span class="grad">Layan Khalil Ibrahim</span><span class="mono">Problem → Requirements → Architecture → Software → Intelligence → Validation → Product</span></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
